@@ -1,0 +1,9 @@
+body{
+max-width: 100%;
+    overflow-x: hidden;
+    background: url('../imgs/background2.png') center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	font-family:"Arial";
+}

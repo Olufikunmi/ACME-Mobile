@@ -1,0 +1,53 @@
+<div>
+    <img class="headerPlank" src="imgs/plank.png">
+</div>
+
+<div>
+    <p class="headerText">Account Summary</p>
+</div>
+<a href ="#"> <img class="bomb" src="imgs/bomb.png"></a>
+<div class="content">
+    <div>
+        <div>
+            <img class="rocket" src="imgs/rocket.png">
+            <p class="rocketText">Checking and Savings</p>
+        </div>
+
+        <!-- List Each Savings/Checking Account form accounts list -->
+        <% _.each(accountsList, function(account) {
+            var productName = $.trim(String(account.get('productName')));
+                if(productName.indexOf("Account") > -1){ %>
+        <a href ="#account/<%= account.get('accountNumber') %>">
+            <div>
+                <img class="listPlank" src="imgs/plank2.png">
+                <p class="accountType"><%= account.get('productName') %> - <%= account.get('accountNumber') %></p>
+                <p class="accountBalanceType">Available Balance</p>
+                <p class="accountBalanceAmount" ><%= account.get('availableBalance').formatMoney(2) %></p>
+            </div>
+        </a>
+        <%
+        }
+        }); %>
+    </div>
+    <div>
+        <div>
+            <img class="rocket rocketPadding" src="imgs/rocket.png">
+            <p class="rocketText rocketTextPadding">Loans and Credit</p>
+        </div>
+        <!-- List Each Savings/Checking Account form accounts list -->
+        <% _.each(accountsList, function(account) {
+            var productName = $.trim(String(account.get('productName')));
+                if(productName.indexOf("Account") == -1){ %>
+        <a href ="#account/<%= account.get('accountNumber') %>">
+            <div>
+                <img class="listPlank" src="imgs/plank2.png" >
+                <p class="accountType"><%= account.get('productName') %> - <%= account.get('accountNumber') %>
+                <p class="accountBalanceType">Available Balance</p>
+                <p class="accountBalanceAmount"><%= account.get('availableBalance').formatMoney(2) %></p>
+            </div>
+        </a>
+        <%
+        }
+        }); %>
+    </div>
+</div>s

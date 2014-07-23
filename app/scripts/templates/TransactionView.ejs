@@ -1,0 +1,51 @@
+<div>
+    <img src="imgs/plank.png" style="width:100%;height: 12%;position: fixed;right: 0px;top: 0px;z-index:1000;">
+</div>
+
+<div class="transfer">
+    <p class="headerText">Make a Transfer</p></div>
+<div class="billPay">
+    <p class="headerText">Bill Pay</p>
+</div>
+<a href="#"> <img class="bomb" src="imgs/bomb.png"></a>
+<form id="transfer" action="#transfer">
+    <div style="position:fixed;top:14%;">
+        <div class="transferSuccess" style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:15%; top:32%; text-align:center;"> Your Transfer Was Successful! </p>
+        </div>
+        <div class="billPaySuccess" style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:15%; top:32%; text-align:center;">Your Bill Pay Was Successful!</p>
+        </div>
+        <div style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:5%; top:32%;">From:</p>
+                <select style="position:absolute;color:black;font: 5vw 'arial'; right:5%; top:32%;width:53%;" autofocus>
+                    <option value="Select1">Select Account</option>
+                    <option value="Checking">Checking: $1,240.00</option>
+                    <option value="Savings">Savings: $502.04</option>
+                </select>
+        </div>
+        <div style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:5%; top:32%;">To:</p>
+                <select style="position:absolute;color:black;font: 5vw 'arial'; right:5%; top:32%;width:53%;">>
+                    <option value="Select2">Select Account</option>
+                    <option value="Checking">Checking: $1,240.00</option>
+                    <option value="Savings">Savings: $502.04</option>
+                    <option value="Savings">Mastercard: ($102.00)</option>
+                    <option value="Savings">Loan: ($20,102.07)</option>
+                    <option value="Savings">Mortgage: ($504.67)</option>
+                </select>
+        </div>
+        <div style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:5%; top:32%;">Amount:</p>
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; right:59%; top:32%;">$</p>
+            <input type="number" name="amount" style="position:absolute;color:black;font: 5vw 'arial'; right:5%; top:32%;width:53%;" required>
+        </div>
+        <div style="position:relative;top:12%;"><img src="imgs/plank2.png" style="position:relative;width:100%;height:10%;">
+            <p style="position:absolute;color:black;font: bold 5vw 'arial'; left:5%; top:32%;">Date:</p>
+            <input type="date" name="amount" style="position:absolute;color:black;font: 5vw 'arial'; right:5%; top:32%;width:53%;" required>
+        </div>
+            <button id="btnSubmit" class="btn btn-lg btn-primary btn-block" type="submit" style="position:relative; background-color: #D63333;height:7%;font:white 'arial'; font-size:6vw;vertical-align:middle;padding:0px;width:46%;left:27%;text-align: center; top:10px;">
+                Submit
+            </button>
+        </div>
+</form>

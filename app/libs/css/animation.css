@@ -1,0 +1,85 @@
+ .newest {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: doub;
+      -webkit-animation-name: doub;
+	  -webkit-animation-delay: 0s; /* Safari and Chrome */
+    	animation-delay: 0s;
+	   -webkit-animation-iteration-count: 1; /* Safari and Chrome */
+      animation-iteration-count: 1;
+    }
+	@-webkit-keyframes doub {
+	from {
+  margin-left:-1900%;
+      }
+    }
+	@-moz-keyframes doub {
+	from {
+  margin-left:-100%;
+      }
+    }
+	 .anvil {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+	   -webkit-animation-delay: 4s; /* Safari and Chrome */
+    animation-delay: 4s;
+	   -webkit-animation-iteration-count: 1; /* Safari and Chrome */
+    animation-iteration-count: 1;
+    }
+	  .newe {
+      -moz-animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      -moz-animation-name: coyote;
+      -webkit-animation-name: coyote;
+	   -webkit-animation-iteration-count: 1; /* Safari and Chrome */
+    animation-iteration-count: 1;
+    }
+    
+   @-moz-keyframes slidein {
+	from {
+	 width:68%;
+	 z-index:5000;
+  margin-left:40%;
+  margin-top: 0%;
+      }
+      to {
+	  width:68%;
+	   margin-left:0%;
+	   z-index:5000;
+  margin-top: 90%;
+      } 
+    }
+	
+   @-webkit-keyframes slidein {
+	from {
+	 width:68%;
+	 z-index:5000;
+  margin-left:40%;
+  margin-top: 0%;
+      }
+      to {
+	  width:68%;
+	   margin-left:0%;
+	   z-index:5000;
+  margin-top: 90%;
+      } 
+    }
+	
+	@-moz-keyframes coyote {from 
+	{
+	 width:42%;
+      }
+      to {
+	  width:42%;
+      }} 
+	@-webkit-keyframes coyote {
+	from {
+	 width:42%;
+      }
+      to {
+	  width:42%;
+      } 
+    }
+	

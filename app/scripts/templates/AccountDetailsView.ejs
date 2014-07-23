@@ -1,0 +1,93 @@
+<div>
+    <img class="headerPlank" src="imgs/plank.png">
+</div>
+
+<div>
+    <p class="headerText">Account Details</p>
+</div>
+
+<a href="#">
+    <img src="imgs/bomb.png" class="bomb">
+</a>
+
+<div class="content">
+    <div>
+        <img class="rocket" src="imgs/rocket.png">
+        <p class="rocketText""><%= transactionsModel.productName %></p>
+    </div>
+    <div>
+        <img class="listPlank" src="imgs/plank2.png">
+        <p class="accountDetailsBalanceText">Current Balance:</p>
+        <p class="accountDetailsBalanceText right">
+            <%= transactionsModel.currentBalance.formatMoney(2)%></p>
+    </div>
+    <div>
+        <img class="listPlank" src="imgs/plank2.png">
+        <p class="accountDetailsBalanceText">Available Balance:</p>
+        <p class="accountDetailsBalanceText right">
+            <%= transactionsModel.availableBalance.formatMoney(2)%></p>
+    </div>
+
+    <% var pendingFound = false; for(var i=0; i
+            < transactionsModel.transactions.length; i++) {
+        var
+                transaction=transactionsModel.transactions[i];
+        var
+                posted=$.trim(String(transaction.status));if(posted.indexOf("POSTED") <
+            0){ console.log("PENDING"); if(!pendingFound){ pendingFound = true;%>
+    <div>
+        <div>
+            <img class="rocket rocketPadding" src="imgs/rocket.png">
+            <p class="rocketText rocketTextPadding">Pending Transactions</p>
+        </div>
+        <% } %>
+        <div>
+            <img class="listPlank" src="imgs/plank2.png">
+            <p
+                    class="date month"><%
+                    var dateArray = transaction.date.split("-"); dateArray[1] %></p>
+            <p
+                    class="date day"><%=
+                    dateArray[2] %></p>
+			<span class="transactionDescription"><%=
+                    transaction.description %></span>
+            <p class="transactionType"><%
+                if(transaction.transactionType.indexOf("DEP") > -1){ %> Deposit <%}
+                else{ %> N/A <%}%></p>
+            <p class="transactionAmount"><%=
+                    transaction.amount.formatMoney(2) %></p>
+        </div>
+        <% } } if(pendingFound){ %>
+    </div>
+    <% } %>
+    <% var postedFound = false;
+    var dateStrings = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            for(var i=0; i<transactionsModel.transactions.length; i++) {
+        var transaction = transactionsModel.transactions[i];
+        var posted = $.trim(String(transaction.status));
+            if(posted.indexOf("POSTED") > -1){
+            if(!postedFound){
+        console.log("Make rocket");
+        postedFound = true;%>
+    <div>
+        <div>
+            <img class="rocket rocketPadding" src="imgs/rocket.png">
+            <p class="rocketText rocketTextPadding">Complete Transactions</p>
+        </div>
+        <% } %>
+        <div>
+            <img class="listPlank" src="imgs/plank2.png">
+            <p class="date month"><% var dateArray = transaction.date.split("-");%>
+                <%= dateStrings[parseInt(dateArray[1])-1] %></p>
+            <p class="date day"><%= dateArray[2] %></p>
+            <span class="transactionDescription"><%= transaction.description %></span>
+            <p class="transactionType""><% if(transaction.transactionType.indexOf("DEP") > -1){ %>
+            Deposit
+            <%} else{ %> N/A <%}%></p>
+            <p class="transactionAmount"><%= transaction.amount.formatMoney(2) %></p>
+        </div>
+        <% } }
+                if(postedFound){ %>
+    </div>
+    <% } %>
+</div>

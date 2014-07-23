@@ -1,0 +1,585 @@
+/* =============================================================================
+   Primary styles
+   Author: Team APEX
+   ========================================================================== */
+
+/* -------- General -------- */
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	background: url('../../imgs/background2.png') center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Arial";
+}
+
+.headerPlank {
+	position: absolute;
+	width: 100%;
+	height: 11.3%;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 1000;
+}
+
+.headerText {
+	position: fixed;
+	font: bold 5.5vw 'arial';
+	width: 100%;
+	text-align: center;
+	top: 5.8%;
+	z-index: 1000;
+}
+
+.bomb {
+	position: absolute;
+	position: fixed;
+	width: 14%;
+	right: 4.7%;
+	top: 3.2%;
+	z-index: 1000;
+}
+
+.content {
+	position: absolute;
+	top: 11.3%;
+}
+
+.content div {
+	position: relative;
+}
+
+.rocket {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.rocketPadding {
+	padding-top: 3%
+}
+
+.listPlank {
+	position: relative;
+	width: 100%;
+	height: 10%;
+}
+
+.rocketText {
+	position: absolute;
+	color: white;
+	font: 5vw 'arial';
+	width: 100%;
+	text-align: center;
+	top: 26%;
+}
+
+.rocketTextPadding {
+	top: 37%;
+}
+
+/* ------- LogIn -------- */
+#card {
+	position: relative;
+	position: fixed;
+	width: 100%;
+	max-height: 30%;
+	height: auto;
+	left: 0px;
+	top: 11.3%;
+}
+
+#username {
+	position: fixed;
+	background-color: transparent;
+	border: transparent;
+	height: inherit;
+	font: bold 4.375vw 'arial';
+	left: 24%;
+	/* padding: 0; */
+	width: 50%;
+	bottom: 73.58%;
+	text-align: center;
+}
+
+#password {
+	position: fixed;
+	background-color: #FFDB94;
+	height: 5.281%;
+	font: bold 4.375vw 'arial';
+	width: 62.5%;
+	left: 18.75%;
+	text-align: center;
+	top: 36%;
+}
+
+#signInButton {
+	position: fixed;
+	background-color: #D63333;
+	height: inherit;
+	font: white 'arial';
+	font-size: 5.625vw;
+	vertical-align: middle;
+	padding: 0px;
+	width: 45%;
+	left: 27.5%;
+	text-align: center;
+	top: 44.181%;
+}
+
+#anvil {
+	position: fixed;
+	width: 68%;
+	height: auto;
+	right: 15.625%;
+	bottom: 5.281%;
+}
+
+/* ------- Drop-down Menu ------- */
+#menu {
+	position: fixed;
+	z-index: 10000;
+	left: 2.5%;
+	top: 5.1%;
+	width: 18%;
+}
+
+#menuButton {
+	background-color: #575757;
+	font-size: 4.8vw;
+	padding: 2px;
+	width: 100%;
+}
+
+#menuButton .span {
+	color: white;
+}
+
+.dropdown-menu {
+	font-size: 4vw;
+}
+
+/* -------- Account Summary -------- */
+.accountType {
+	position: absolute;
+	color: black;
+	font: bold 4.2vw 'arial';
+	left: 5%;
+	top: 24%;
+}
+
+.accountBalanceType {
+	position: absolute;
+	color: #615454;
+	font: bold 3.9vw 'arial';
+	left: 5%;
+	bottom: -2%
+}
+
+.accountBalanceAmount {
+	position: absolute;
+	color: black;
+	font: bold 5vw 'arial';
+	right: 5%;
+	top: 32%;
+}
+
+/* -------- Account Details --------- */
+.accountDetailsBalanceText {
+	position: absolute;
+	color: black;
+	font: bold 5vw 'arial';
+	left: 6.2%;
+	top: 32%;
+}
+
+.right {
+	left: auto;
+	right: 6.5%;
+}
+
+.date {
+	position: absolute;
+	left: 6.2%;
+}
+
+.date.month {
+	color: #615454;
+	font: bold 3.4vw 'arial';
+	top: 24%;
+}
+
+.date.day {
+	color: red;
+	font: bold 5vw 'arial';
+	top: 45%
+}
+
+.transactionDescription {
+	position: absolute;
+	left: 18.5%;
+	top: 24%;
+	right: 30%;
+	color: black;
+	font: bold 3.985vw 'arial';
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+.transactionType {
+	position: absolute;
+	color: #615454;
+	font: bold 3.9vw 'arial';
+	left: 18.5%;
+	bottom: 16%;
+}
+
+.transactionAmount {
+	position: absolute;
+	color: black;
+	font: bold 5vw 'arial';
+	right: 6.5%;
+	top: 34%;
+}
+.error {
+    display:none;
+    color: red;
+    position: relative;
+    font: bold 4.75vw 'arial';
+    width: 100%;
+    text-align: center;
+    top: 15%;
+    z-index: 1000;
+    background-color: #ffdb94;
+}
+/*--------- Transfer and BillPay --------*/
+
+.transfer{
+    display: none;
+}
+
+.billPay{
+    display: none;
+}
+
+.transferSuccess{
+    display: none;
+}
+
+.billPaySuccess{
+    display: none;
+}
+
+/* -------- Contact -------- */
+.contactPadding {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2%;
+}
+
+#tallListPlank{
+	height: 15%;
+}
+
+.contactPadding.small{
+	font: 5vw 'arial';
+}
+
+.contactPadding.extraSmall{
+	font: 4vw 'arial';
+	padding-top: 0px;
+	text-align: right;
+	
+}
+
+/*body {
+  background: #ebebeb;
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+  min-height: 500px;
+  background: #fff;
+}
+#menu {
+  background: #444;
+  height: 30px; color: #fff; text-align: right;
+}
+#menu ul {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+#menu ul li {
+  float: left;
+  margin-left: 10px;
+}
+#menu ul li a {
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  color: #ccc;
+}
+#container {
+
+}
+#logo {
+   padding: 20px;
+}
+h1{
+  padding: 0;
+  margin: 0;
+}
+#page {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  min-height: 400px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#page  {
+  width: 960px;
+}
+
+ #page .main {
+    display: block;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 500px;
+    float: left;
+    overflow: hidden;
+  }
+
+ #page .sidebar {
+    display: block;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 400px;
+    height: 300px;
+    background-color:#FFF;
+    float: left;
+  }
+
+  #page .sidebar .ad {
+    clear:both;
+  }
+
+  #page .sidebar .ad .pic {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+  }  
+
+  #page .sidebar .ad .info {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+  }  
+
+  #page .sidebar .ad .info h4 {
+    font-size: 16px;
+    color:#666;
+  }
+
+  #page .sidebar .ad .info p {
+    font-size: 10px;
+    color:#999;
+  }
+
+#page .contributors-stats ul {
+  list-style: none;
+}
+
+#page .contributors-stats ul li {
+  display:block;
+  position: relative;
+  height: 20px;
+}
+
+#page .contributors-stats ul li p {
+  font-size: 20px;
+  color:#999;
+  font-weight: bold; 
+  margin: 0px;
+  padding: 0px;
+}
+
+#page #contributors-list {
+
+}
+
+#page #contributors-list .podium {
+  display: block;
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 320px;
+}
+
+#page #contributors-list .podium .top {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+#page #contributors-list .podium .base {
+  display: block;
+  position: relative;
+  float: left;
+  background-color: rgba(214, 214, 214, 0.38);
+  width: 100%;
+}
+
+#page #contributors-list .podium .base p {
+  text-align: left;
+  color: #666;
+  font-weight: normal; 
+  font-size: 12px; 
+  margin-left: 10px;
+}
+
+#page #contributors-list ul.contributors {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #page #contributors-list ul.contributors li {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    float: left;
+  }
+
+ #page #contributors-list ul.contributors li div.contributor {
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+ } 
+
+ #page #contributors-list ul.contributors li div.contributor ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+ } 
+
+ #page #contributors-list ul.contributors li div.contributor ul li {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.username {
+    z-index: 2;
+    height: 14px;
+    border: none;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.username p {
+    display:block;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    color:#333;
+    line-height: 14px !important;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.username p a {
+    color:#333;
+    text-decoration: none;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.username p a:hover {
+    color:#334231;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.pic {
+    z-index: 1;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.pic a {
+    display:block;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border: none;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.pic p {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.contributions {
+    z-index: 3;
+    pointer-events:none;
+ }
+
+ #page #contributors-list ul.contributors li div.contributor ul li.contributions p {
+    display:block;
+    position: absolute;
+    left:0px;
+    width:100%;
+    height: 15%;
+    top: 85%;
+    text-align: center;
+    line-height: 14px !important;
+    font-size: 10px;
+    font-weight: normal;
+    color:#333;
+    margin:0px;
+    padding:0px;
+ }
+
+ */
